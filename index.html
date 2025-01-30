@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Jadval</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <button class="create-btn" id="openModal">Create Post</button>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">
+                    <i class="fa-solid fa-x"></i>
+                </span>
+                <h2>Create New Post</h2>
+                <form id="postForm">
+                    <input type="text" id="title" placeholder="Title" required />
+                    <textarea id="userText" placeholder="Body" required></textarea>
+                    <button type="submit">Save Post</button>
+                </form>
+            </div>
+        </div>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Edit Post</h2>
+            <form id="editForm">
+                <input type="text" id="editTitle" required />
+                <textarea id="editBody" required></textarea>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./modal.js"></script>
+</body>
+
+</html>
