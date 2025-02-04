@@ -33,25 +33,24 @@
         <table id="table">
             <thead>
                 <tr>
-                    <th>No.</th>
+                    <th>ID</th>
                     <th>Title</th>
                     <th>Body</th>
                     <th>Action</th>
                 </tr>
             </thead>
-
         </table>
     </div>
 
     <!-- Edit Modal -->
     <div class="modal" id="editModal">
         <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
+            <span class="close" id="closeEditModal">&times;</span>
             <h2>Edit Post</h2>
             <form id="editForm">
                 <input type="text" id="editTitle" required />
                 <textarea id="editBody" required></textarea>
-                <button type="submit">Save Changes</button>
+                <button id="editChanges" type="submit">Save Changes</button>
             </form>
         </div>
     </div>
